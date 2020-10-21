@@ -60,6 +60,7 @@ app.get('/weather', (req, res) => {
 
             res.send({
                 forcast: forcastData.temperature,
+                auth: "HAK",
                 location,
                 address: req.query.address
             })

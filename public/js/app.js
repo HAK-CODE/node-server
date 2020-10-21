@@ -3,6 +3,7 @@ const search = document.querySelector('input')
 const locBox = document.querySelector('#location')
 const forcastBox = document.querySelector('#forcast')
 const addressBox = document.querySelector('#address')
+const authBox = document.querySelector('#auth')
 
 weatherForm.addEventListener('submit', (event) => {
     event.preventDefault()
@@ -19,6 +20,7 @@ weatherForm.addEventListener('submit', (event) => {
             locBox.textContent = data.location
             forcastBox.textContent = data.forcast
             addressBox.textContent = data.address
+            authBox.textContent = data.auth
         }
     })
 })
